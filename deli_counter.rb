@@ -13,16 +13,10 @@ end
 
 def take_a_number(katz_deli, new_costumer)
 
-     if katz_deli.empty?
        katz_deli << new_costumer
-       puts "Welcome, #{new_costumer}. You are number #{1} in line."
+       puts "Welcome, #{new_costumer}. You are number #{katz_deli.length} in line."
        katz_deli
-    else
-      !katz_deli.empty?
-      katz_deli << new_costumer
-      puts "Welcome, #{new_costumer}. You are number #{katz_deli.length} in line."
-      katz_deli
-    end
+  
 end
 
 def now_serving(katz_deli)
